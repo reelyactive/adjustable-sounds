@@ -1,0 +1,35 @@
+{
+  "name": "adjustable-sounds",
+  "homepage": "https://github.com/reelyactive/adjustable-sounds/",
+  "author": "reelyActive",
+  "description": "Adjust a sound loop using accelerometer beacons as knobs. We believe in an open Internet of Things.",
+  "keywords": [
+    "sound",
+    "accelerometer",
+    "BLE",
+    "Tone.js"
+  ],
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "main": "./server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reelyactive/adjustable-sounds.git"
+  },
+  "dependencies": {
+    "barnowl": ">=0.4.23",
+    "serialport": ">=4.0.0",
+    "express": ">=4.0.0",
+    "socket.io": ">=2.0.0"
+  },
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/reelyactive/adjustable-sounds/issues"
+  },
+  "contributors": [
+    { "name": "Jeffrey Dungen" }
+  ],
+  "license": "MIT"
+}
