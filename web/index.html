@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/reelyactive.css">
+    <link rel="stylesheet" href="style/adjustable-sounds.css">
     <script type="text/javascript" src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/ui-bootstrap-tpls.min.js"></script>
     <script type="text/javascript" src="js/socket.io.js"></script>
@@ -35,14 +36,41 @@
       </nav>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4">
-            <img src="images/knob.png" class="img-responsive center-block">
+          <div class="col-md-4 text-center">
+            <img src="images/knob.png" ng-class="knobs.a.classes"><br>
+            <form class="form-inline">
+              <div class="form-group">
+                <select class="form-control" ng-model="knobs.a.id" id="knobA">
+                  <option ng-repeat="id in beacons track by id"
+                          value="{{id}}"> {{id}} </option>
+                </select>
+                <label for="knobA"> &nbsp; {{knobs.a.angleString}}&deg; </label>
+              </div>
+            </form>
           </div>
-          <div class="col-md-4">
-            <img src="images/knob.png" class="img-responsive center-block">
+          <div class="col-md-4 text-center">
+            <img src="images/knob.png" ng-class="knobs.b.classes"><br>
+            <form class="form-inline">
+              <div class="form-group">
+                <select class="form-control" ng-model="knobs.b.id" id="knobB">
+                  <option ng-repeat="id in beacons track by id"
+                          value="{{id}}"> {{id}} </option>
+                </select>
+                <label for="knobB"> &nbsp; {{knobs.b.angleString}}&deg; </label>
+              </div>
+            </form>
           </div>
-          <div class="col-md-4">
-            <img src="images/knob.png" class="img-responsive center-block">
+          <div class="col-md-4 text-center">
+            <img src="images/knob.png" ng-class="knobs.c.classes"><br>
+            <form class="form-inline">
+              <div class="form-group">
+                <select class="form-control" ng-model="knobs.c.id" id="knobC">
+                  <option ng-repeat="id in beacons track by id"
+                          value="{{id}}"> {{id}} </option>
+                </select>
+                <label for="knobC"> &nbsp; {{knobs.c.angleString}}&deg; </label>
+              </div>
+            </form>
           </div>
         </div>
       </div>
